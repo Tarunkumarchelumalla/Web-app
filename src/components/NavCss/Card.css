@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+
+.h3text {
+    text-align: center;
+    color: #000000;
+    font-size: 2.5em;
+   
+  
+}
+.wrapper {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-top: 15px;
+	padding: 1.5%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+
+
+}
+
+.card {
+    box-shadow: 0 0 10px 5px #e1e5ee;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    display: flex;
+    background: rgb(255, 255, 255);
+}
+
+.card:hover {
+  box-shadow: 0px 0px 25px #333;
+  opacity: 0.95;
+  transition: 0.5s;
+}
+
+.card_img {
+    width: 14rem;
+    height: 11rem;
+    object-fit: cover;
+}
+
+.card_body {
+    margin: 1rem;
+    flex-grow: 1;
+    
+}
+
+.card_title {
+    line-height: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.card_description {
+    line-height: 1.2rem;
+}
+
+.card_price {
+    font-size: 1.4rem;
+    margin-top: 0.6rem;
+}
+
+.card_price::before {
+    content: "₹";
+    font-size: 1rem;
+    position: relative;
+    top: -0.3rem;
+    padding-right: 0.1rem;
+  }
+  .card_btn {
+    border: none;
+    border-top: 1px solid #e1e5ee;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    color: inherit;
+    width: 100%;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+  .card_btn:hover {
+    color: #2A6E5D;
+  }
+  .imp{
+    color: black !important;
+}
+.list{
+  margin-top: 2px;
+}
+.logo{
+  cursor: pointer;
+  color:#FFC064 ;
+}
+li{
+  list-style-type: none;
+}
+  @media screen and (max-width: 1000px) {
+    .wrapper {
+      grid-template-columns: repeat(auto-fit, minmax(14rem, 16rem));
+      width: 50%;
+      display: flex;
+      
+    }
+    .card {
+      flex-direction: column;
+      text-align: center;
+      min-width: 14rem;
+    }
+    .card__img {
+
+      grid-template-columns: repeat(auto-fit, minmax(14rem, 16rem));
+    }
+  }

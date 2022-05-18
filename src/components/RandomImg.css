@@ -1,0 +1,35 @@
+.style-container{
+    /* margin-top: 1000px; */
+    background-image: "https://i.imgur.com/wwj7ofW.png";
+    background-repeat: no-repeat;
+    background-position:bottom left ;
+
+    color: #2A6E5D !important;
+}
+.marg{
+    margin-top: 25px;
+}
+.tag{
+    background-color: #FFC265;
+    padding-top: 0;
+    padding: 10px; 
+    border-radius: 2px;
+    border: 0px solid #9D9456;
+    color: #0B473F;
+}
+@media screen and (min-width: 769px) {
+   
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) { 
+    .style-container{
+        background-image: none;
+    }
+}
+
+@media only screen and (max-device-width: 480px) {
+    .style-container{
+        background-image: none;
+    }
+}
+

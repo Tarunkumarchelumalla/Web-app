@@ -1,0 +1,52 @@
+.main-div {
+    background-color: #7cdbbd;
+    background-image: linear-gradient(315deg, #ffffff 0%, #0bab64 74%);
+}
+
+.h1faq {
+    justify-content: center;
+    text-align: center;
+    position:relative; 
+    top:5rem;
+}
+
+.fqwrapper {
+    display: flex;
+    height: 100vh;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.accordian {
+    width: 700px;
+}
+
+.item {
+    background-color: #deebdd;
+    background-image: linear-gradient(315deg, #deebdd 0%, #bbdbbe 74%);
+    margin-bottom: 5px;
+    padding: 10px 20px;
+
+}
+
+.title {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.content {
+    color: rgb(0, 0, 0);
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.content.show {
+    height: auto;
+    max-height: 9999px;
+    transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+}

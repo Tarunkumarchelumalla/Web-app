@@ -1,0 +1,43 @@
+h1.test1 {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 5em;
+    letter-spacing: -2px;
+    
+    text-transform: uppercase;
+    text-align: center;
+   }
+
+
+.card_container {
+    font-family: "Trebuchet MS", sans-serif;
+    background-color: #fff;
+    padding: 1px 20px 20px 1px;
+    margin: 16px 0;
+    width: 500px;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.card_container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.card_container img {
+    float: left;
+    margin-right: 20px;
+}
+
+.card_container span {
+    font-size: 18px;
+
+
+}
+
+.card_imag {
+    margin: 15px 0px 0px 15px;
+    width: 90px;
+}

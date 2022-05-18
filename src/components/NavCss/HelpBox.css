@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+
+.flip-container {
+    width: 25%;
+    float: left;
+    text-align: center;
+    height: 250px;
+}
+
+.flip3D h3 {
+    color: #000000;
+    font-size: 1.5em;
+    position: relative;
+    top: 40%;
+}
+
+.flip3D {
+    width: 240px;
+    height: 200px;
+    margin: 0 auto;
+    cursor: pointer;
+    /*float:left;*/
+}
+
+.flip3D>.front {
+    position: absolute;
+    -webkit-transform: perspective(600px) rotateY(0deg);
+    -ms-transform: perspective(600px) rotateY(0deg);
+    transform: perspective(600px) rotateY(0deg);
+    background: #A0D468;
+    box-shadow:rgba(0,0,0.35) 0px 5px 15px ;
+    width: 240px;
+    height: 200px;
+    border-radius: 32px;
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: -webkit-transform .5s linear 0s;
+    transition: -ms-transform .5s linear 0s;
+    transition: transform .5s linear 0s;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    
+}
+
+.flip3D>.back {
+    position: absolute;
+    -webkit-transform: perspective(600px) rotateY(180deg);
+    transform: perspective(600px) rotateY(180deg);
+    background: #A0D468;
+    box-shadow:rgba(0,0,0.35) 0px 5px 15px ;
+    width: 240px;
+    height: 200px;
+    border-radius: 32px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: -webkit-transform .5s linear 0s;
+    transition: transform .5s linear 0s;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+
+}
+
+.flip3D:hover>.front {
+    -webkit-transform: perspective(600px) rotateY(-180deg);
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.flip3D:hover>.back {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    /* Firefox */
+    -webkit-animation: fadein 2s;
+    /* Safari and Chrome */
+    -o-animation: fadein 2s;
+    /* Opera */
+
+    -webkit-transform: perspective(600px) rotateY(0deg);
+    transform: perspective(600px) rotateY(0deg);
+}
+
+@media screen and (max-width: 700px) {
+    .flip-container {
+      width: 50%;
+      display: flex;
+    }
+    
+
+    
+
+}
